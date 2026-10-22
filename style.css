@@ -1,4 +1,19 @@
 body {
+  background-image: url("https://raw.githubusercontent.com/danisaracino/mio-sito12/main/img/immagine.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: movimentoSfondo 15s ease-in-out infinite alternate;
+}
+
+@keyframes movimentoSfondo {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
   background: lightblue;
   font-family: Arial, sans-serif;
   text-align: center;
