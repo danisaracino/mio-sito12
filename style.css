@@ -61,3 +61,70 @@ h2 {
 .menu a:hover {
   color: orange;
 }
+body {
+  background: lightyellow;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: darkblue;
+}
+
+h2 {
+  color: seagreen;
+  border-bottom: 2px solid seagreen;
+}
+
+nav a {
+  display: inline-block;
+  background: seagreen;
+  color: white;
+  padding: 8px 14px;
+  margin-right: 6px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #f28c28;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #999999;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: darkblue;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #eef3f8;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  th, td {
+    padding: 4px;
+    font-size: 14px;
+  }
+}
