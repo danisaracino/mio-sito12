@@ -187,3 +187,23 @@ img {
     text-align: center;
   }
 }
+.bottone-sogno {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(90deg, #ff6ec7, #ff8e53);
+  color: #14051e;
+  border: 2px solid #00f5d4;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: 0 0 14px rgba(255, 110, 199, 0.6);
+  transition: 0.3s;
+}
+
+.bottone-sogno:hover {
+  background: #00f5d4;
+  color: #14051e;
+  box-shadow: 0 0 20px #00f5d4;
+}
