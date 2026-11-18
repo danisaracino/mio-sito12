@@ -1,144 +1,147 @@
 body {
-  background-image: url("https://raw.githubusercontent.com/danisaracino/mio-sito12/main/img/immagine.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  animation: movimentoSfondo 15s ease-in-out infinite alternate;
-}
-
-@keyframes movimentoSfondo {
-  from {
-    background-position: 0% 50%;
-  }
-  to {
-    background-position: 100% 50%;
-  }
-}
-  background: lightblue;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-}
-
-h1 {
-  color: darkblue;
-}
-
-.sotto {
-  color: gray;
-}
-
-.scheda {
-  background: white;
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: left;
-}
-
-h2 {
-  color: teal;
-}
-
-.piede {
-  font-size: 12px;
-  color: gray;
-}
-.menu {
-  background: darkblue;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 12px;
-}
-
-.menu a:hover {
-  color: orange;
-}
-body {
-  background: lightyellow;
-  color: #222222;
-  font-family: Arial, sans-serif;
-  max-width: 700px;
+  background: radial-gradient(circle at top, #131b3a 0%, #070a14 100%);
+  color: #e2e8f0;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  max-width: 750px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 25px;
+  min-height: 100vh;
 }
 
 h1 {
-  color: darkblue;
+  color: #00f2fe;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 12px rgba(0, 242, 254, 0.7);
 }
 
 h2 {
-  color: seagreen;
-  border-bottom: 2px solid seagreen;
+  color: #a855f7;
+  border-bottom: 2px solid #00f2fe;
+  padding-bottom: 5px;
+  text-shadow: 0 0 8px rgba(168, 85, 247, 0.5);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 25px 0;
 }
 
 nav a {
   display: inline-block;
-  background: seagreen;
-  color: white;
-  padding: 8px 14px;
-  margin-right: 6px;
+  background: rgba(0, 242, 254, 0.1);
+  color: #00f2fe;
+  border: 1px solid #00f2fe;
+  padding: 10px 18px;
   border-radius: 8px;
   text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.25);
+  transition: 0.3s;
 }
 
 nav a:hover {
-  background: #f28c28;
+  background: #00f2fe;
+  color: #070a14;
+  box-shadow: 0 0 20px #00f2fe;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
-  background: white;
+  background: rgba(19, 27, 58, 0.85);
+  border: 1px solid #00f2fe;
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.15);
 }
 
 th, td {
-  border: 1px solid #999999;
-  padding: 8px;
+  border: 1px solid #2d3b6e;
+  padding: 10px;
   text-align: left;
+  color: #e2e8f0;
 }
 
 th {
-  background: darkblue;
-  color: white;
+  background: #0f172a;
+  color: #00f2fe;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 tr:nth-child(even) {
-  background: #eef3f8;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.presente {
+  background: rgba(16, 185, 129, 0.25) !important;
+  color: #34d399;
+  font-weight: bold;
+}
+
+.assente {
+  background: rgba(239, 68, 68, 0.25) !important;
+  color: #f87171;
+  font-weight: bold;
+}
+
+#riepilogo {
+  background: rgba(15, 23, 42, 0.9);
+  border: 2px solid #a855f7;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+  border-radius: 12px;
+  padding: 12px 22px;
+  margin-top: 20px;
+}
+
+button {
+  background: #a855f7;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.5);
+}
+
+button:hover {
+  background: #00f2fe;
+  color: #070a14;
+  box-shadow: 0 0 18px #00f2fe;
 }
 
 img {
   max-width: 100%;
   border-radius: 12px;
+  border: 2px solid #00f2fe;
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+}
+
+body.scuro {
+  background: #ffffff;
+  color: #111827;
+}
+
+body.scuro h1, body.scuro h2 {
+  color: #0d3b66;
+  text-shadow: none;
 }
 
 @media (max-width: 600px) {
   body {
-    padding: 10px;
+    padding: 12px;
+  }
+  nav a {
+    width: 100%;
+    text-align: center;
   }
   th, td {
-    padding: 4px;
+    padding: 6px;
     font-size: 14px;
   }
 }
-.presente {
-  background: #c8f0d2;
-}
-.assente {
-  background: #f6c9c9;
-}
-#riepilogo {
-  background: white;
-  border: 2px solid #12467a;
-  border-radius: 12px;
-  padding: 10px 20px;
-  margin-top: 20px;
-}
-background: #f0f2f5;
