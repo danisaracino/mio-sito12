@@ -128,3 +128,16 @@ img {
     font-size: 14px;
   }
 }
+.presente {
+  background: #c8f0d2;
+}
+.assente {
+  background: #f6c9c9;
+}
+#riepilogo {
+  background: white;
+  border: 2px solid #12467a;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
